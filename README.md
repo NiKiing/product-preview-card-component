@@ -7,4 +7,5 @@ Front-end coding challenge of Frontend Mentor . This a responsive project made i
 ## Displays 🖥️
 
 Desktop: 1440px
+
 Mobile: 335px
