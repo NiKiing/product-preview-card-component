@@ -1,0 +1,121 @@
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-green: #1a4031;
+    --Principal-font: 'Montserrat', sans-serif;
+    --Secundary-font: 'Fraunces', serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--Cream);
+}
+
+body main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+}
+
+body main .card-container {
+    width: 348px;
+    height: 610px;
+    display: grid;
+    grid-template-rows: auto 372px;
+    justify-items: center;
+    background-color: var(--White);
+    border-radius: 20px;
+}
+
+body main .card-container img {
+    object-fit: contain;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-container img:nth-child(2) {
+    display: none;
+}
+
+body main .card-container .info--card {
+    color: var(--Very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+    width: 298px;
+    gap: 9.5px;
+}
+
+body main .card-container .info--card span:first-child {
+    font-family: var(--Principal-font);
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+}
+
+body main .card-container .info--card h1 {
+    font-family: var(--Secundary-font);
+    line-height: 30px;
+    margin: 0;
+}
+
+body main .card-container .info--card p {
+    font-family: var(--Principal-font);
+    font-size: 0.89rem;
+    font-weight: 500;
+}
+
+body main .card-container .info--card .price {
+    display: flex;
+    align-items: center;
+}
+
+body main .card-container .info--card .price span:first-child {
+    letter-spacing: normal;
+    font-size: 2rem;
+    font-family: var(--Secundary-font);
+    color: var(--Dark-cyan);
+}
+
+body main .card-container .info--card .price span:last-child {
+    font-family: var(--Principal-font);
+    font-size: 0.8rem;
+    margin-left: 24px;
+    text-decoration: line-through;
+}
+
+body main .card-container .info--card a {
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--Dark-cyan);
+    width: 100%;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: var(--Principal-font);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+body main .card-container .info--card a:hover {
+    background-color: var(--Dark-green);
+}
+
+body main .card-container .info--card a i {
+    background-image: url("../images/icon-cart.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+}
