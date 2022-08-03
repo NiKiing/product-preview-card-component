@@ -1,0 +1,30 @@
+body main .card-container {
+    grid-template-columns: auto 300px;
+    grid-template-rows: auto;
+    width: 600px;
+    height: 451px;
+}
+
+body main .card-container img:first-child {
+    display: none;
+}
+
+body main .card-container img:nth-child(2) {
+    display: block;
+    width: 100%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 20px;
+}
+
+body main .card-container .info--card {
+    width: 230px;
+}
+
+body main .card-container .info--card span:first-child {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+body main .card-container .info--card a {
+    margin-top: 12px;
+}
